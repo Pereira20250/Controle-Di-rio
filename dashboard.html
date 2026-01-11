@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Minhas Metas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+
+</head>
+<body onload="proteger()">
+
+<header class="topo">
+  <div class="logo-area">
+    <img src="logo.png" class="logo-small">
+    <span class="titulo">Controle Diário</span>
+  </div>
+
+  <nav class="menu">
+    <a href="dashboard.html" class="btn-nav">🎯 Metas</a>
+    <a href="evolucao.html" class="btn-nav">📊 Evolução</a>
+    <button class="btn-nav sair" onclick="logout()">🚪 Sair</button>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>🎯 Minhas Metas</h1>
+
+  <input id="metaInput" placeholder="Nova meta">
+  <button onclick="adicionarMeta()">Adicionar</button>
+
+  <ul id="listaMetas"></ul>
+</main>
+
+<script src="auth.js"></script>
+<script src="metas.js"></script>
+</body>
+</html>
